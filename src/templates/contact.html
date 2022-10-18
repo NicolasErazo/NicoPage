@@ -1,0 +1,75 @@
+{% include 'header.html' %}   
+
+<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(static/img/bg.jpg)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">Contact Us</h1>
+  </div>
+</div>		<!-- Contact Form Section -->
+<section id="contact-form" style="background-image: url(static/img/bg-white.jpg);">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-sub-title">Through this form your message will be received and a response will be given as soon as possible. <br> Thanks for everything.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Contact Form Holder -->
+                <div class="col-md-8 offset-md-2 contact-form-holder mt-4" data-aos="fade-up">
+                    <form method="post" name="contact-us" action="/contact/save">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End of Contact Form Holder -->
+            </div>
+        </div>
+        <div class="section-content pt-0">
+            <div class="title-wrap" data-aos="fade-up">
+                <h2 class="section-title">Where To Find Us?</h2>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <span class="lnr lnr-location fs-40 py-4 d-block"></span>
+                    <h5>LOCATION</h5>
+                    <p>Colombia</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <span class="lnr lnr-clock fs-40 py-4 d-block"></span>
+                    <h5>WORKING TIME</h5>
+                    <p>Monday - Saturday</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+                    <h5>CALL US</h5>
+                    <p>319-364-8237</p>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                    <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+                    <h5>EMAIL</h5>
+                    <p>nico.lacho@outlook.com</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Contact Form Section --> </div>	
+
+{% include 'footer.html' %} 

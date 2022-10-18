@@ -1,0 +1,131 @@
+{% include 'header.html' %}   
+
+<div class="jumbotron jumbotron-single d-flex align-items-center" style="background-image: url(static/img/bg.jpg)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">Blog</h1>
+  </div>
+</div>	<!-- Blog Section -->
+<section id="blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title"><b>News</b></h2>
+                <p class="section-sub-title">Below I present for you some of my personal interests, which are sports, programming and work projects</p>
+            </div>
+            <div class="row">
+                <!-- Blog -->
+                <div class="col-md-12 blog-holder">
+                    <div class="row">
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper" data-aos="fade-up">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="{{ url_for('static', filename='/img/blog-1.jpg/') }}" alt="">
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <h6><small>CODE</small></h6>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>Quick the new Framework</h4>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">15 July 2022</p> 
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p><b>Batteries Included</b>
+                                            <br>
+                                            ⚡️ Instant development with Vite.
+                                            <br>
+                                            ⚡ Big ecosystem of tools ready to use.
+                                            <br>
+                                            ⚡ Built in extendable styling. Tailwinds, Postcss...
+                                            <br>
+                                            ⚡ Debugging for SSR, browser, prerendering.
+                                            <br>
+                                            ⚡ Ready for Vercel, Cloudflare, express...</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by the Builder.io team</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="https://qwik.builder.io/">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper" data-aos="fade-up">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="{{ url_for('static', filename='/img/blog-2.jpg/') }}" alt="">
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <h6><small>SPORTS</small></h6>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>Skateboarding</h4>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">4 February 2022</p> 
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>The International Olympic Committee (IOC) has announced that at the 2028 Los Angeles Olympics, skateboarding will become a full-fledged permanent Olympic sport.</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by Olympic Committee (IOC)</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="https://fep.es/website/23-14039-oficial-el-skate-se-convierte-en-deporte-olimpico-permanente.htm#:~:text=El%20Comit%C3%A9%20Ol%C3%ADmpico%20Internacional%20(COI,ol%C3%ADmpico%20permanente%20de%20pleno%20derecho.">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper" data-aos="fade-up">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <img src="{{ url_for('static', filename='/img/blog-3.jpg/') }}" alt="">
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <h6><small>WEB DEVELOPMENT</small></h6>
+                                    </div>
+                                    <div class="blog-title">
+                                        <h4>My first website</h4>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">20 May 2021</p> 
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>On this page, all the knowledge learned in programming was put into practice, fulfilling the main objective that was to satisfy the client's needs.</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by Nicolas Erazo</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="http://hommersomconsulting.com/">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                    </div>
+                </div>
+                <!-- End of Blog -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section -->	</div>
+
+{% include 'footer.html' %} 
