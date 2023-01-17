@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, flash
 import smtplib
 
 app = Flask(__name__)
@@ -44,10 +44,10 @@ def save_contact_and_send_email():
                     "nico.lacho@outlook.com", messageEmail)
     server.quit()
 
+    flash(f"Message sent successfully!", "success")
     return redirect('/')
 
 
 if __name__ == '__main__':
-    app.secret_key='1234'
+    app.secret_key = '1234'
     app.run(debug=True)
-

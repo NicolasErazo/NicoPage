@@ -1,15 +1,31 @@
 {% include 'header.html' %}
-<script>
+<div>
+    <!-- Begin alerts -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <script>
 
-    function fireSweetAlert() {
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
-    }
+        Swal.fire({
 
-</script>
+            title: "{{ category.title() }}!",
+            // success , error , warning ,info
+
+            text: "{{ message }}",
+            // Custom message flashed from your flask routes
+
+            icon: "{{ category }}" == "danger" ? "error" : "{{ category }}"
+            // success , error , warning ,info
+
+        })
+
+    </script>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <!-- End alerts -->
+</div>
 
 <div class="jumbotron d-flex align-items-center">
 
@@ -497,8 +513,7 @@
                                     placeholder="Your Message ..."></textarea>
                             </div>
                             <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg"
-                                    type="submit" name="submit">Send
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send
                                     Message</button>
                             </div>
                         </div>
