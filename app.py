@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect, flash
+from flask import render_template, request, redirect
 import smtplib
 from decouple import config
 
@@ -44,9 +44,9 @@ def save_contact_and_send_email():
     server.sendmail("nico.lacho@outlook.com",
                     "nico.lacho@outlook.com", messageEmail)
     server.quit()
+    alert = True
 
-    # flash(f"Message sent successfully!")
-    return redirect('/')
+    return render_template('/index.html', alert=alert)
 
 
 if __name__ == '__main__':
