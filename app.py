@@ -45,7 +45,7 @@ def save_contact_and_send_email():
                     "nico.lacho@outlook.com", messageEmail)
     server.quit()
 
-    flash(f"Message sent successfully!")
+    # flash(f"Message sent successfully!")
     return redirect('/')
 
 
