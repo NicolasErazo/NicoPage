@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template, request, redirect, flash
 import smtplib
+from decouple import config
 
 app = Flask(__name__)
 
@@ -39,13 +40,13 @@ def save_contact_and_send_email():
 
     server = smtplib.SMTP("smtp-mail.outlook.com", 587)
     server.starttls()
-    server.login("nico.lacho@outlook.com", "Nicolaserazo1")
+    server.login("nico.lacho@outlook.com", config('SECRET_KEY'))
     server.sendmail("nico.lacho@outlook.com",
                     "nico.lacho@outlook.com", messageEmail)
     server.quit()
 
     flash(f"Message sent successfully!")
-    return render_template('/index.html')
+    return redirect('/')
 
 
 if __name__ == '__main__':
