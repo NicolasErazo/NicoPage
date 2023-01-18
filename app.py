@@ -44,7 +44,8 @@ def save_contact_and_send_email():
                     "nico.lacho@outlook.com", messageEmail)
     server.quit()
 
-    return redirect('/')
+    flash(f"Message sent successfully!")
+    return render_template('/index.html')
 
 
 if __name__ == '__main__':
