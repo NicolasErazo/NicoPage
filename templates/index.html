@@ -1,31 +1,25 @@
 {% include 'header.html' %}
-<div>
-    <!-- Begin alerts -->
-    {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-    {% for category, message in messages %}
-    <script>
 
-        Swal.fire({
+{% for message in get_flashed_messages() %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-            title: "{{ category.title() }}!",
-            // success , error , warning ,info
-
-            text: "{{ message }}",
-            // Custom message flashed from your flask routes
-
-            icon: "{{ category }}" == "danger" ? "error" : "{{ category }}"
-            // success , error , warning ,info
-
-        })
-
-    </script>
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
-
-    <!-- End alerts -->
+<div class="alert alert-success">
+    <strong>Success!!</strong>&nbsp;{{ message }}
 </div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(1000, 0).slideUp(1000, function () {
+                $(this).remove();
+            });
+        }, 5000);
+
+    });
+</script>
+{% endfor %}
 
 <div class="jumbotron d-flex align-items-center">
 
@@ -499,10 +493,12 @@
                     <form action="/contact/save" method="post">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name"
+                                    required>
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
                             </div>
                             <div class="col-md-12 form-group">
                                 <input type="number" class="form-control" id="phoneNumber" name="phoneNumber"
