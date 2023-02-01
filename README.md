@@ -14,9 +14,9 @@ This project is a Portfolio website created with Python - Flask.
 
 ## 📷 Screenshots
 
-<img src="../../blob/master/src/assets/images/Screen%231.png" style="width: 100%"  />
-<img src="../../blob/master/src/assets/images/Screen%232.png" style="width: 100%"  />
-<img src="../../blob/master/src/assets/images/Screen%233.png" style="width: 100%"  />
+<img src="../../blob/master/static/img/Screen%231.png" style="width: 100%"  />
+<img src="../../blob/master/static/img/Screen%232.png" style="width: 100%"  />
+<img src="../../blob/master/static/img/Screen%233.png" style="width: 100%"  />
 
 ## ⚙ Features
 
