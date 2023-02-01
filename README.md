@@ -14,9 +14,6 @@ This project is a Portfolio website created with Python - Flask.
 
 ## 📷 Screenshots
 
-static\img\Screen#1.png
-C:\Users\Nicol\OneDrive\Escritorio\Pagina Web\NicoPage\static\img\Screen#1.png
-
 <img src="../../blob/master/src/assets/images/Screen%231.png" style="width: 100%"  />
 <img src="../../blob/master/src/assets/images/Screen%232.png" style="width: 100%"  />
 <img src="../../blob/master/src/assets/images/Screen%233.png" style="width: 100%"  />
