@@ -24,10 +24,9 @@ Users can:
 
 <img src="https://octodex.github.com/images/spectrocat.png" style="width: 25%" align="right">
 
-- Search for a Pokémon by name and get suggestions based on the matches.
-- Navigate through a list of over 800 Pokémon cards, divided into pages, each card showing the name, ID, and types of the Pokémon.
-- View detailed information about the Pokémon by clicking on a card, divided into sections:
-  - General: Name, Image - Pokemon, Experience, Height, Type and Weight.
+- You can send your contact address to receive a response according to your request.
+- You can see all the projects carried out by me in the different programming languages learned.
+- You have all the basic information about me and who I am as a person.
 
 ## 🛠 Technologies and frameworks
 
