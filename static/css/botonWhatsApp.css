@@ -15,3 +15,22 @@
 .whatsapp-icon {
     margin-top: 13px;
 }
+
+hr {
+    border-top: 1px dashed #8c8b8b;
+    background-color: #f0f0f0;
+    width: 700px;
+    float: center;
+}
+
+hr:after {
+    content: '\002702';
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    left: 40px;
+    padding: 0 3px;
+    background: transparent;
+    color: #8c8b8b;
+    font-size: 18px;
+}
